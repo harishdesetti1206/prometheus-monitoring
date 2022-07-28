@@ -18,9 +18,9 @@ terraform {
 
   backend "s3" {
     bucket         = "hdesettistatefiles"
-    key            = "k8s/cluster/k8s-autoscaling-cluster/prometheusmonitoring/key/terraform.tfstate"
+    key            = "k8s/cluster/k8s-autoscaling-cluster/monitoring/key/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "dynamodb-state-locking-prometheusmonitoring"
+    dynamodb_table = "dynamodb-state-locking-monitoring"
   }
 }
 
